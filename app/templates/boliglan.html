@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boliglånskalkulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Boliglånskalkulator</h1>
+        <form id="loanForm">
+            <div class="form-group">
+                <label for="belop">Lånebeløp</label>
+                <input type="number" id="belop" name="belop" value="3000000" required>
+            </div>
+            <div class="form-group">
+                <label for="rente">Rente (%)</label>
+                <input type="number" id="rente" name="rente" value="3.5" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="aar">Nedbetalingstid (år)</label>
+                <input type="number" id="aar" name="aar" value="20" required>
+            </div>
+            <button type="submit">Beregn</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Månedlig betaling:</h2>
+            <p class="amount">14 900 kr</p>
+        </div>
+    </div>
+</body>
+</html>
