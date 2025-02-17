@@ -1,0 +1,7 @@
+
+git add --all
+git commit -m "Tvinger oppdatering av boliglan.html"
+git push --force origin main
+git add --all
+
+
