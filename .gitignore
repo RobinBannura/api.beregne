@@ -45,3 +45,4 @@ replit.nix
 __pycache__/
 venv/
 *.log
+.env
